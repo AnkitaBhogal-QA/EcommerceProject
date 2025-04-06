@@ -7,9 +7,9 @@
         <methods>
           <include name="register"/>
           <include name="toCloseDatabase"/>
-          <include name="setUp"/>
-          <include name="toConnectServer"/>
           <include name="toCloseServer"/>
+          <include name="toConnectServer"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
           <include name="toConnectDatabase"/>
         </methods>
