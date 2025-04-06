@@ -6,7 +6,7 @@ public interface IAutoConstant {
 	String EXCELPATH  = "./src/test/resources/TestData/DemowebshopTestData.xlsx";
 	
 	String REGISTERSHEET = "RegisterData";
-	String LOGINSHEET = "LoginData";
+	String INVALIDLOGINSHEET = "InvalidLoginData";
 	String LOGINSHEETAFTERREG ="LoginDataAfterReg";
 
 }

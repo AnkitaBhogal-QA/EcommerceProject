@@ -3,6 +3,7 @@ package com.Demowebshop.TestScripts;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Demowebshop.GenericLib.BaseTest;
@@ -16,10 +17,10 @@ import com.Demowebshop.ObjectRepository.WelcomePage;
  */
 
 
-public class RegisterTest extends BaseTest{
+public class ValidRegisterTest extends BaseTest{
 	
 	
-	@Test
+	@Test(testName = "TC_Register_ValidReg_01: Verify valid user can register successfully")
 	public void register() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		int fno = j.randomNumber();
@@ -42,6 +43,11 @@ public class RegisterTest extends BaseTest{
 		// Step 3: To fill registration form
 		RegisterPage rp = new RegisterPage(driver);
 		rp.toRegister(firstName, lastName, email, password);
+		
+		String text = rp.getSuccessMessage();
+		
+		Assert.assertEquals(text, "Your registration completed");
+
 	
 		 
 	}

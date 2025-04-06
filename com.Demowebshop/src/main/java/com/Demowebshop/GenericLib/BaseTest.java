@@ -23,6 +23,7 @@ public class BaseTest implements IAutoConstant
 	public BrowserUtility d = new BrowserUtility();
 	public ExcelUtility e = new ExcelUtility();
 	public JavaUtility j = new JavaUtility();
+	public CustomListner c = new CustomListner();
 	
 	public static WebDriver driver;
 

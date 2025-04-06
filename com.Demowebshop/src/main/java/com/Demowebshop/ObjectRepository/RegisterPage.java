@@ -35,6 +35,8 @@ public class RegisterPage extends BasePage{
 	@FindBy(id = "register-button")
 	private WebElement registerButton;
 	
+	@FindBy(xpath="//div[@class='result']")
+	WebElement regSuccessMessage;
 	
 	/*
 	 * this method will perform registration
@@ -48,6 +50,12 @@ public class RegisterPage extends BasePage{
 		passwordTextField.sendKeys(password);
 		confirmPasswordTextField.sendKeys(password);
 		registerButton.click();
+	}
+
+
+	public String getSuccessMessage() {
+		System.out.println(regSuccessMessage.getText());
+		return regSuccessMessage.getText();
 	}
 	
 }

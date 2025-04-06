@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Entering login credentials asSharma@123 RajeevSharma2448@testxp.com]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-06T13:17:03 IST" name="Suite" finished-at="2025-04-06T13:17:22 IST" duration-ms="18803">
+  <suite started-at="2025-04-06T17:28:43 IST" name="Suite" finished-at="2025-04-06T17:29:13 IST" duration-ms="29920">
     <groups>
     </groups>
-    <test started-at="2025-04-06T13:17:03 IST" name="Test" finished-at="2025-04-06T13:17:22 IST" duration-ms="18803">
-      <class name="com.Demowebshop.TestScripts.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Demowebshop.TestScripts.LoginTest@cb0755b]" started-at="2025-04-06T13:17:11 IST" name="setUp" finished-at="2025-04-06T13:17:16 IST" duration-ms="5029" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.Demowebshop.TestScripts.LoginTest@cb0755b]" started-at="2025-04-06T13:17:16 IST" name="loginTest" finished-at="2025-04-06T13:17:21 IST" duration-ms="5411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Demowebshop.TestScripts.LoginTest@cb0755b]" started-at="2025-04-06T13:17:21 IST" name="tearDown" finished-at="2025-04-06T13:17:22 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.Demowebshop.TestScripts.LoginTest -->
-      <class name="com.Demowebshop.TestScripts.RegisterTest">
-        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:03 IST" name="toConnectServer" finished-at="2025-04-06T13:17:03 IST" duration-ms="10" status="PASS">
+    <test started-at="2025-04-06T17:28:43 IST" name="Test" finished-at="2025-04-06T17:29:13 IST" duration-ms="29920">
+      <class name="com.Demowebshop.TestScripts.ValidRegisterTest">
+        <test-method is-config="true" signature="toConnectServer()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:28:43 IST" name="toConnectServer" finished-at="2025-04-06T17:28:43 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toConnectServer -->
-        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:03 IST" name="toConnectDatabase" finished-at="2025-04-06T13:17:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toConnectDatabase()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:28:43 IST" name="toConnectDatabase" finished-at="2025-04-06T17:28:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toConnectDatabase -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:03 IST" name="setUp" finished-at="2025-04-06T13:17:08 IST" duration-ms="5261" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:28:43 IST" name="setUp" finished-at="2025-04-06T17:28:48 IST" duration-ms="4810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="register()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:08 IST" name="register" finished-at="2025-04-06T13:17:11 IST" duration-ms="2634" status="PASS">
+        <test-method signature="register()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:28:48 IST" name="register" finished-at="2025-04-06T17:28:50 IST" duration-ms="2582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:11 IST" name="tearDown" finished-at="2025-04-06T13:17:11 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:28:50 IST" name="tearDown" finished-at="2025-04-06T17:28:51 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:22 IST" name="toCloseDatabase" finished-at="2025-04-06T13:17:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toCloseDatabase()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:29:13 IST" name="toCloseDatabase" finished-at="2025-04-06T17:29:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toCloseDatabase -->
-        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.Demowebshop.TestScripts.RegisterTest@6bbe85a8]" started-at="2025-04-06T13:17:22 IST" name="toCloseServer" finished-at="2025-04-06T13:17:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="toCloseServer()[pri:0, instance:com.Demowebshop.TestScripts.ValidRegisterTest@79e4c792]" started-at="2025-04-06T17:29:13 IST" name="toCloseServer" finished-at="2025-04-06T17:29:13 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- toCloseServer -->
-      </class> <!-- com.Demowebshop.TestScripts.RegisterTest -->
+      </class> <!-- com.Demowebshop.TestScripts.ValidRegisterTest -->
+      <class name="com.Demowebshop.TestScripts.InvalidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Demowebshop.TestScripts.InvalidLoginTest@7f485fda]" started-at="2025-04-06T17:29:00 IST" name="setUp" finished-at="2025-04-06T17:29:07 IST" duration-ms="7160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inValidloginTest()[pri:0, instance:com.Demowebshop.TestScripts.InvalidLoginTest@7f485fda]" started-at="2025-04-06T17:29:07 IST" name="inValidloginTest" finished-at="2025-04-06T17:29:12 IST" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidloginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Demowebshop.TestScripts.InvalidLoginTest@7f485fda]" started-at="2025-04-06T17:29:12 IST" name="tearDown" finished-at="2025-04-06T17:29:13 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Demowebshop.TestScripts.InvalidLoginTest -->
+      <class name="com.Demowebshop.TestScripts.ValidLoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.Demowebshop.TestScripts.ValidLoginTest@4b29d1d2]" started-at="2025-04-06T17:28:51 IST" name="setUp" finished-at="2025-04-06T17:28:54 IST" duration-ms="3567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:0, instance:com.Demowebshop.TestScripts.ValidLoginTest@4b29d1d2]" started-at="2025-04-06T17:28:54 IST" name="loginTest" finished-at="2025-04-06T17:29:00 IST" duration-ms="5680" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Entering login credentials asSharma@123 RajeevSharma2448@testxp.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Demowebshop.TestScripts.ValidLoginTest@4b29d1d2]" started-at="2025-04-06T17:29:00 IST" name="tearDown" finished-at="2025-04-06T17:29:00 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.Demowebshop.TestScripts.ValidLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
