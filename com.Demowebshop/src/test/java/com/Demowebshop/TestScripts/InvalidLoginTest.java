@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.Demowebshop.GenericLib.BaseTest;
 import com.Demowebshop.ObjectRepository.LoginPage;
 import com.Demowebshop.ObjectRepository.WelcomePage;
+import com.aventstack.extentreports.Status;
 
 /**
  * 
@@ -23,15 +24,18 @@ public class InvalidLoginTest extends BaseTest{
 	public void inValidloginTest() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		String email = e.readDataFromExcel(EXCELPATH, INVALIDLOGINSHEET, 1, 0);
-		String password = e.readDataFromExcel(EXCELPATH, LOGINSHEETAFTERREG, 1, 1);
+		String password = e.readDataFromExcel(EXCELPATH, INVALIDLOGINSHEET, 1, 1);
 		
 		
-		
+		test.log(Status.INFO, "Step 1: Clicked on Login Link on welcome page");
 		WelcomePage wp = new WelcomePage(driver);
 		wp.getLoginLink().click();
 		
+		test.log(Status.INFO, "Step 2: Entering credentials as: " + email + " and " + password);
 		LoginPage lp = new LoginPage(driver);
 		lp.loginPage(email, password);
+		
+		test.log(Status.INFO, "Step 3: Login Button clicked");
 		
 		String text = lp.getErrorText1();
 		
@@ -39,6 +43,7 @@ public class InvalidLoginTest extends BaseTest{
 		
 		Assert.assertEquals(text, "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
 		
+		test.log(Status.INFO, "Step 4: Invalid Login Pass");
 		
 	}
 

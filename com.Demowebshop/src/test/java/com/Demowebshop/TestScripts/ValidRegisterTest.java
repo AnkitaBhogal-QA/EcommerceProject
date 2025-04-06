@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.Demowebshop.GenericLib.BaseTest;
 import com.Demowebshop.ObjectRepository.RegisterPage;
 import com.Demowebshop.ObjectRepository.WelcomePage;
+import com.aventstack.extentreports.Status;
 
 /**
  * 
@@ -36,17 +37,22 @@ public class ValidRegisterTest extends BaseTest{
 		
 		  
 		// Step 2: Click on register link on welcome page
+		test.log(Status.INFO, "Step 1: Clicked on Register Link on welcome page");
 		WelcomePage wp = new WelcomePage(driver);
 		wp.getRegisterLink().click();
 		  
 		  
 		// Step 3: To fill registration form
-		RegisterPage rp = new RegisterPage(driver);
+		test.log(Status.INFO, "Step 2: Entering registration details : " + firstName + " " + lastName + " " + email + " " + password);
+		RegisterPage rp = new RegisterPage(driver); 
 		rp.toRegister(firstName, lastName, email, password);
+		
+		test.log(Status.INFO, "Step 3: Register Button clicked");
 		
 		String text = rp.getSuccessMessage();
 		
 		Assert.assertEquals(text, "Your registration completed");
+		test.log(Status.INFO, "Step 4: Registration sucessful");
 
 	
 		 

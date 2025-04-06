@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
+import com.aventstack.extentreports.ExtentTest;
+
 /**
  * 
  * @author Ankita
@@ -25,6 +27,7 @@ public class BaseTest implements IAutoConstant
 	public JavaUtility j = new JavaUtility();
 	public CustomListner c = new CustomListner();
 	
+	public ExtentTest test;
 	public static WebDriver driver;
 
 	@BeforeSuite

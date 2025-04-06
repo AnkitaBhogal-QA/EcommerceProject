@@ -22,7 +22,7 @@ public class CustomListner implements ITestListener{
 	
 	
 	ExtentReports extent;
-    ExtentTest test;
+    public ExtentTest test;
     
 	public void onStart(ITestContext context) {
         ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
@@ -33,7 +33,11 @@ public class CustomListner implements ITestListener{
     }
 
 	public void onTestStart(ITestResult result) {
+		
 		test = extent.createTest(result.getMethod().getMethodName());
+		  Object testClassInstance = result.getInstance();
+		    if (testClassInstance instanceof BaseTest) {
+		        ((BaseTest) testClassInstance).test = test;}
 	}
 
 	public void onTestSuccess(ITestResult result) {
