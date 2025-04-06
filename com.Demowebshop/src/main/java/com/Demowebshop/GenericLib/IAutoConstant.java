@@ -7,5 +7,6 @@ public interface IAutoConstant {
 	
 	String REGISTERSHEET = "RegisterData";
 	String LOGINSHEET = "LoginData";
+	String LOGINSHEETAFTERREG ="LoginDataAfterReg";
 
 }

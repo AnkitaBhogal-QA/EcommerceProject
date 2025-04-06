@@ -4,15 +4,26 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
-public class BaseTest implements IAutoConstant  {
+/**
+ * 
+ * @author Ankita
+ *
+ */
+
+
+public class BaseTest implements IAutoConstant  
+{
 	public FileUtility f = new FileUtility();
 	public BrowserUtility d = new BrowserUtility();
 	public ExcelUtility e = new ExcelUtility();
+	public JavaUtility j = new JavaUtility();
+	
 	public static WebDriver driver;
 
 	@BeforeSuite
@@ -26,7 +37,7 @@ public class BaseTest implements IAutoConstant  {
 	}
 
 	/*
-	 * this method will take care of launching the browser and application
+	 * this method will launch the browser mentioned in CommonData.properties file
 	 */
 
 	@BeforeClass
@@ -36,12 +47,18 @@ public class BaseTest implements IAutoConstant  {
 		System.out.println("==launching " + browser + " browser==");
 		if (browser.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();
+		else if (browser.equalsIgnoreCase("chromeincognito"))
+		{
+			ChromeOptions c = new ChromeOptions();
+			c.addArguments("incognito");
+			driver = new ChromeDriver(c);
+		}
 		else if (browser.equalsIgnoreCase("firefox"))
 			driver = new FirefoxDriver();
 		else if (browser.equalsIgnoreCase("edge"))
 			driver = new EdgeDriver();
 		else
-			Reporter.log("==invalid browser==", true);
+			System.out.println("==invalid browser==");
 		d.maximizeWindow(driver);
 		d.implicitWait(driver, 20);
 		d.launchApplication(driver, url);
