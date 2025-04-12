@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +114,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.Demowebshop.TestScripts.ValidRegisterTest" class="method navigator-link" hash-for-method="register">register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.Demowebshop.TestScripts.SearchItemTest" class="method navigator-link" hash-for-method="toSearchItem">toSearchItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -146,14 +151,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Demowebshop.TestScripts.InvalidLoginTest</span>
+              <span class="class-name">com.Demowebshop.TestScripts.SearchItemTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="inValidloginTest">
-                  </a> <!-- inValidloginTest -->
-                  <span class="method-name">inValidloginTest</span>
+                  <a name="toSearchItem">
+                  </a> <!-- toSearchItem -->
+                  <span class="method-name">toSearchItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,6 +174,21 @@
                   <a name="register">
                   </a> <!-- register -->
                   <span class="method-name">register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Demowebshop.TestScripts.InvalidLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inValidloginTest">
+                  </a> <!-- inValidloginTest -->
+                  <span class="method-name">inValidloginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,6 +210,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.Demowebshop.TestScripts.ValidRegisterTest&quot;/&gt;
       &lt;class name=&quot;com.Demowebshop.TestScripts.ValidLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.Demowebshop.TestScripts.SearchItemTest&quot;/&gt;
       &lt;class name=&quot;com.Demowebshop.TestScripts.InvalidLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -204,7 +225,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,24 +251,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'com.Demowebshop.TestScripts.ValidLoginTest')
-data.setCell(0, 3, 5386);
+data.setCell(0, 3, 5640);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'inValidloginTest')
 data.setCell(1, 2, 'com.Demowebshop.TestScripts.InvalidLoginTest')
-data.setCell(1, 3, 5270);
+data.setCell(1, 3, 5310);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'register')
 data.setCell(2, 2, 'com.Demowebshop.TestScripts.ValidRegisterTest')
-data.setCell(2, 3, 2823);
+data.setCell(2, 3, 3718);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'toSearchItem')
+data.setCell(3, 2, 'com.Demowebshop.TestScripts.SearchItemTest')
+data.setCell(3, 3, 1128);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -262,7 +287,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -270,9 +295,22 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">toCloseDatabase</span>
                 <br/>
+                <span class="ignored-method-name">toConnectServer</span>
+                <br/>
+                <span class="ignored-method-name">toCloseServer</span>
+                <br/>
+                <span class="ignored-method-name">toConnectDatabase</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.Demowebshop.TestScripts.SearchItemTest</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">toConnectDatabase</span>
                 <br/>
                 <span class="ignored-method-name">toConnectServer</span>
+                <br/>
+                <span class="ignored-method-name">toCloseDatabase</span>
                 <br/>
                 <span class="ignored-method-name">toCloseServer</span>
                 <br/>
@@ -283,11 +321,11 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">toCloseServer</span>
                 <br/>
-                <span class="ignored-method-name">toConnectServer</span>
+                <span class="ignored-method-name">toConnectDatabase</span>
                 <br/>
                 <span class="ignored-method-name">toCloseDatabase</span>
                 <br/>
-                <span class="ignored-method-name">toConnectDatabase</span>
+                <span class="ignored-method-name">toConnectServer</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -306,60 +344,75 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">toConnectDatabase</span>
-                <span class="method-start">289 ms</span>
+                <span class="method-start">367 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">304 ms</span>
+                <span class="method-start">389 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">register</span>
-                <span class="method-start">5824 ms</span>
+                <span class="method-start">5796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8651 ms</span>
+                <span class="method-start">9516 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demowebshop.TestScripts.ValidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8861 ms</span>
+                <span class="method-start">10012 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">12800 ms</span>
+                <span class="method-start">14143 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18187 ms</span>
+                <span class="method-start">19784 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Demowebshop.TestScripts.SearchItemTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20070 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">toSearchItem</span>
+                <span class="method-start">24314 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">25442 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demowebshop.TestScripts.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18373 ms</span>
+                <span class="method-start">25692 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">inValidloginTest</span>
-                <span class="method-start">22109 ms</span>
+                <span class="method-start">29704 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27382 ms</span>
+                <span class="method-start">35014 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Demowebshop.TestScripts.ValidRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">toCloseDatabase</span>
-                <span class="method-start">27620 ms</span>
+                <span class="method-start">35247 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">toCloseServer</span>
-                <span class="method-start">27953 ms</span>
+                <span class="method-start">35658 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -8,6 +8,7 @@
     <classes>
       <class name="com.Demowebshop.TestScripts.ValidRegisterTest"/>
       <class name="com.Demowebshop.TestScripts.ValidLoginTest"/>
+      <class name="com.Demowebshop.TestScripts.SearchItemTest"/>
       <class name="com.Demowebshop.TestScripts.InvalidLoginTest"/>
     </classes>
   </test> <!-- Test -->
