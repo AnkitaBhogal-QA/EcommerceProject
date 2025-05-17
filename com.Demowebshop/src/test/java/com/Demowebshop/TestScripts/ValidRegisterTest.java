@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Demowebshop.GenericLib.BaseTest;
@@ -18,10 +19,11 @@ import com.aventstack.extentreports.Status;
  */
 
 
+@Listeners(com.Demowebshop.GenericLib.CustomListner.class)
 public class ValidRegisterTest extends BaseTest{
 	
 	
-	@Test(testName = "TC_Register_ValidReg_01: Verify valid user can register successfully")
+	@Test(description = "TC_Register_ValidReg_01:- <br>Verify that user is able to register with valid details")
 	public void register() throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		int fno = j.randomNumber();

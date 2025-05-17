@@ -6,17 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Demowebshop.TestScripts.ValidLoginTest">
+      <class name="com.Demowebshop.TestScripts.SearchItemTest">
         <methods>
-          <include name="loginTest"/>
           <include name="toCloseDatabase"/>
           <include name="toCloseServer"/>
-          <include name="toConnectServer"/>
           <include name="setUp"/>
+          <include name="toConnectServer"/>
+          <include name="toSearchItem"/>
           <include name="tearDown"/>
           <include name="toConnectDatabase"/>
         </methods>
-      </class> <!-- com.Demowebshop.TestScripts.ValidLoginTest -->
+      </class> <!-- com.Demowebshop.TestScripts.SearchItemTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -30,7 +30,7 @@ import com.aventstack.extentreports.Status;
 
 public class ValidLoginTest extends BaseTest {
 	
-	@Test(testName = "TC_Login_ValidLogin_01: Verify valid user is able to login successfully")
+	@Test(description  = "TC_Login_ValidLogin_02:- <br>Verify user is able to login with registered user")
 	public void loginTest() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		

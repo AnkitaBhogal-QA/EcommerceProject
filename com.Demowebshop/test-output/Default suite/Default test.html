@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 06 19:44:26 IST 2025</td>
+<td>Started on:</td><td>Sat May 17 23:09:58 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7595 ms)</td>
+<tr><td>Total time:</td><td>76 seconds (76120 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,9 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.Demowebshop.TestScripts.ValidLoginTest.loginTest()'><b>loginTest</b><br>Test class: com.Demowebshop.TestScripts.ValidLoginTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.c.test&quot; is null
-	at com.Demowebshop.TestScripts.ValidLoginTest.loginTest(ValidLoginTest.java:36)
+<td title='com.Demowebshop.TestScripts.CheckoutAfterLogTest.loginAndaddToCartItem()'><b>loginAndaddToCartItem</b><br>Test class: com.Demowebshop.TestScripts.CheckoutAfterLogTest<br>Test method: TC_Checkout_AfterLogin_02:- <br>Verify user is able to checkout after Login</td>
+<td><div><pre>java.lang.AssertionError: expected [https://demowebshop.tricentis.com/onepagecheckout] but found [https://demowebshop.tricentis.com/cart]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Demowebshop.TestScripts.CheckoutAfterLogTest.loginAndaddToCartItem(CheckoutAfterLogTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,9 +113,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace231191650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace231191650'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;this.c.test&quot; is null
-	at com.Demowebshop.TestScripts.ValidLoginTest.loginTest(ValidLoginTest.java:36)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2107873140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107873140'><pre>java.lang.AssertionError: expected [https://demowebshop.tricentis.com/onepagecheckout] but found [https://demowebshop.tricentis.com/cart]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.Demowebshop.TestScripts.CheckoutAfterLogTest.loginAndaddToCartItem(CheckoutAfterLogTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,8 +151,42 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
+<td>10</td>
+<td>com.Demowebshop.TestScripts.CheckoutAfterLogTest@cecf639</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Demowebshop.TestScripts.ValidLoginTest.loginTest()'><b>loginTest</b><br>Test class: com.Demowebshop.TestScripts.ValidLoginTest<br>Test method: TC_Login_ValidLogin_02:- <br>Verify user is able to login with registered user</td>
+<td></td>
+<td>6</td>
+<td>com.Demowebshop.TestScripts.ValidLoginTest@1750fbeb</td></tr>
+<tr>
+<td title='com.Demowebshop.TestScripts.CheckoutWithoutLogTest.checkoutWithoutLogin()'><b>checkoutWithoutLogin</b><br>Test class: com.Demowebshop.TestScripts.CheckoutWithoutLogTest<br>Test method: TC_Checkout_WithoutLogin_01:- <br>Verify user is redirected to Login page when trying to checkout without login</td>
+<td></td>
+<td>4</td>
+<td>com.Demowebshop.TestScripts.CheckoutWithoutLogTest@5b247367</td></tr>
+<tr>
+<td title='com.Demowebshop.TestScripts.InvalidLoginTest.inValidloginTest()'><b>inValidloginTest</b><br>Test class: com.Demowebshop.TestScripts.InvalidLoginTest<br>Test method: TC_Login_InValidLogin_01:- <br>Verify user is not able to login with invalid credentials</td>
+<td></td>
+<td>6</td>
+<td>com.Demowebshop.TestScripts.InvalidLoginTest@7ce026d3</td></tr>
+<tr>
+<td title='com.Demowebshop.TestScripts.ValidRegisterTest.register()'><b>register</b><br>Test class: com.Demowebshop.TestScripts.ValidRegisterTest<br>Test method: TC_Register_ValidReg_01:- <br>Verify that user is able to register with valid details</td>
+<td></td>
+<td>5</td>
+<td>com.Demowebshop.TestScripts.ValidRegisterTest@402c4085</td></tr>
+<tr>
+<td title='com.Demowebshop.TestScripts.SearchItemTest.toSearchItem()'><b>toSearchItem</b><br>Test class: com.Demowebshop.TestScripts.SearchItemTest<br>Test method: TC_SearchItem_WithoutLogin_01:- <br>Verify that user is able to search item without login</td>
+<td></td>
 <td>1</td>
-<td>com.Demowebshop.TestScripts.ValidLoginTest@79e4c792</td></tr>
+<td>com.Demowebshop.TestScripts.SearchItemTest@1caa0244</td></tr>
 </table><p>
 </body>
 </html>

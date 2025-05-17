@@ -20,7 +20,7 @@ import com.aventstack.extentreports.Status;
 
 public class InvalidLoginTest extends BaseTest{
 	
-	@Test(testName = "TC_Login_InValidLogin_01: Verify invalid credentials")
+	@Test(description = "TC_Login_InValidLogin_01:- <br>Verify user is not able to login with invalid credentials")
 	public void inValidloginTest() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		String email = e.readDataFromExcel(EXCELPATH, INVALIDLOGINSHEET, 1, 0);
